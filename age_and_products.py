@@ -71,20 +71,28 @@ def product_and_age_relation(dataframe):
     age_six_max_id_category = age_group_six[age_group_six['Product_ID'] == age_six_max_id].Product_Category_1.values[0]
     age_seven_max_id_category = age_group_seven[age_group_seven['Product_ID'] == age_seven_max_id].Product_Category_1.values[0]
 
+    # Print the most popular productID, its category and total no. of purchases
     print("The most popular product in age group 0-17:", age_one_max_id,
-          "is belonged to primary category no.", age_one_max_id_category)
+          "and belonged to primary category", age_one_max_id_category,
+          ". Total no. of purchases: ", age_one_id[age_one_max_id])
     print("The most popular product in age group 18-25:", age_two_max_id,
-          "is belonged to primary category no.", age_two_max_id_category)
+          "and belonged to primary category", age_two_max_id_category,
+          ". Total no. of purchases: ", age_two_id[age_two_max_id],)
     print("The most popular product in age group 26-35:", age_three_max_id,
-          "is belonged to primary category no.", age_three_max_id_category)
+          "and belonged to primary category", age_three_max_id_category,
+          ". Total no. of purchases: ", age_three_id[age_three_max_id],)
     print("The most popular product in age group 36-45:", age_four_max_id,
-          "is belonged to primary category no.", age_four_max_id_category)
+          "and belonged to primary category", age_four_max_id_category,
+          ". Total no. of purchases: ", age_four_id[age_four_max_id],)
     print("The most popular product in age group 46-50:", age_five_max_id,
-          "is belonged to primary category no.", age_five_max_id_category)
+          "and belonged to primary category", age_five_max_id_category,
+          ". Total no. of purchases: ", age_five_id[age_five_max_id],)
     print("The most popular product in age group 51-55:", age_six_max_id,
-          "is belonged to primary category no.", age_six_max_id_category)
+          "and belonged to primary category", age_six_max_id_category,
+          ". Total no. of purchases: ", age_six_id[age_six_max_id],)
     print("The most popular product in age group 55+:", age_seven_max_id,
-          "is belonged to primary category no.", age_seven_max_id_category)
+          "and belonged to primary category", age_seven_max_id_category,
+          ". Total no. of purchases: ", age_seven_id[age_seven_max_id],)
 
     return age_group_and_product['Age'], age_group_and_product['product_counts']
 
