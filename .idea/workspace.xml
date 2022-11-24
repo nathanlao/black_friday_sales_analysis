@@ -10,13 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81ed252d-608d-4782-b2be-27a50ec54dd8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/group_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/group_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/age_and_products.svg" beforeDir="false" afterPath="$PROJECT_DIR$/age_and_products.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/black_friday_sales.py" beforeDir="false" afterPath="$PROJECT_DIR$/black_friday_sales.py" afterDir="false" />
-    </list>
+    <list default="true" id="81ed252d-608d-4782-b2be-27a50ec54dd8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +36,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
-    <configuration name="black_friday_sales" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="age_and_products" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="group_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -54,7 +48,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/black_friday_sales.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/age_and_products.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -65,7 +59,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.black_friday_sales" />
+        <item itemvalue="Python.age_and_products" />
       </list>
     </recent_temporary>
   </component>
@@ -92,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667963385766</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Code refactoring: now group by age only and count the no. of product id.&#10;&#10;Added print statement for output">
+      <created>1669260776531</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669260776532</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,7 +111,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added methods to get data from CSV file&#10;&#10;Added function to get columns of Age and Product_ID and plot to visualize the relation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added methods to get data from CSV file&#10;&#10;Added function to get columns of Age and Product_ID and plot to visualize the relation" />
+    <MESSAGE value="Code refactoring: now group by age only and count the no. of product id.&#10;&#10;Added print statement for output" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code refactoring: now group by age only and count the no. of product id.&#10;&#10;Added print statement for output" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1388" y="444" key="#Notifications" timestamp="1667782857093">
