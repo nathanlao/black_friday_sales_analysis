@@ -10,7 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81ed252d-608d-4782-b2be-27a50ec54dd8" name="Default Changelist" comment="" />
+    <list default="true" id="81ed252d-608d-4782-b2be-27a50ec54dd8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/group_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/group_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/age_and_products.svg" beforeDir="false" afterPath="$PROJECT_DIR$/age_and_products.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/black_friday_sales.py" beforeDir="false" afterPath="$PROJECT_DIR$/black_friday_sales.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +41,34 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RunManager">
+    <configuration name="black_friday_sales" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="group_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/black_friday_sales.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.black_friday_sales" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667963149639</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added methods to get data from CSV file&#10;&#10;Added function to get columns of Age and Product_ID and plot to visualize the relation">
+      <created>1667963385766</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667963385766</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -68,7 +109,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Added methods to get data from CSV file&#10;&#10;Added function to get columns of Age and Product_ID and plot to visualize the relation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added methods to get data from CSV file&#10;&#10;Added function to get columns of Age and Product_ID and plot to visualize the relation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1388" y="444" key="#Notifications" timestamp="1667782857093">
@@ -83,5 +125,13 @@
       <screen x="0" y="25" width="2560" height="1265" />
     </state>
     <state x="1095" y="217" width="1201" height="903" key="SettingsEditor/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1667779294585" />
+    <state x="1069" y="354" key="Vcs.Push.Dialog.v2" timestamp="1667963389362">
+      <screen x="0" y="25" width="2560" height="1265" />
+    </state>
+    <state x="1069" y="354" key="Vcs.Push.Dialog.v2/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1667963389362" />
+    <state x="1519" y="557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1668390127608">
+      <screen x="0" y="25" width="2560" height="1265" />
+    </state>
+    <state x="1519" y="557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1668390127608" />
   </component>
 </project>
