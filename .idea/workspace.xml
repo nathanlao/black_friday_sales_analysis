@@ -10,7 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81ed252d-608d-4782-b2be-27a50ec54dd8" name="Default Changelist" comment="" />
+    <list default="true" id="81ed252d-608d-4782-b2be-27a50ec54dd8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/age_and_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/age_and_products.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/age_and_products.svg" beforeDir="false" afterPath="$PROJECT_DIR$/age_and_products.svg" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669260776532</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Code refactoring: now group by age only and count the no. of product id.&#10;&#10;Added print statement for output">
+      <created>1669260809136</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669260809136</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,14 +134,34 @@
       <screen x="0" y="25" width="2560" height="1265" />
     </state>
     <state x="1430" y="443" key="#com.intellij.fileTypes.FileTypeChooser/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1667782906340" />
+    <state width="1419" height="333" key="GridCell.Tab.0.bottom" timestamp="1669260505186">
+      <screen x="0" y="25" width="2560" height="1265" />
+    </state>
+    <state width="1419" height="333" key="GridCell.Tab.0.bottom/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1669260505186" />
+    <state width="1419" height="333" key="GridCell.Tab.0.center" timestamp="1669260505185">
+      <screen x="0" y="25" width="2560" height="1265" />
+    </state>
+    <state width="1419" height="333" key="GridCell.Tab.0.center/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1669260505185" />
+    <state width="1419" height="333" key="GridCell.Tab.0.left" timestamp="1669260505185">
+      <screen x="0" y="25" width="2560" height="1265" />
+    </state>
+    <state width="1419" height="333" key="GridCell.Tab.0.left/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1669260505185" />
+    <state width="1419" height="333" key="GridCell.Tab.0.right" timestamp="1669260505185">
+      <screen x="0" y="25" width="2560" height="1265" />
+    </state>
+    <state width="1419" height="333" key="GridCell.Tab.0.right/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1669260505185" />
+    <state x="1429" y="281" key="RollbackChangesDialog" timestamp="1669260895908">
+      <screen x="0" y="25" width="2560" height="1265" />
+    </state>
+    <state x="1429" y="281" key="RollbackChangesDialog/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1669260895908" />
     <state x="1095" y="217" width="1201" height="903" key="SettingsEditor" timestamp="1667779294585">
       <screen x="0" y="25" width="2560" height="1265" />
     </state>
     <state x="1095" y="217" width="1201" height="903" key="SettingsEditor/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1667779294585" />
-    <state x="1069" y="354" key="Vcs.Push.Dialog.v2" timestamp="1667963389362">
+    <state x="1069" y="354" key="Vcs.Push.Dialog.v2" timestamp="1669260835891">
       <screen x="0" y="25" width="2560" height="1265" />
     </state>
-    <state x="1069" y="354" key="Vcs.Push.Dialog.v2/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1667963389362" />
+    <state x="1069" y="354" key="Vcs.Push.Dialog.v2/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1669260835891" />
     <state x="1519" y="557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1668390127608">
       <screen x="0" y="25" width="2560" height="1265" />
     </state>

@@ -40,7 +40,7 @@ def product_and_age_relation(dataframe):
     print("Age 51-55 bought", age_group_six['Product_ID'].count(), 'products')
     print("Age 55+ bought", age_group_seven['Product_ID'].count(), 'products')
 
-    # Find the most popular product in each ages
+    # Find the most popular product in each ages (cal duplicates of Product_ID)
     age_one_id = age_group_one.pivot_table(columns=['Product_ID'],
                                            aggfunc='size')
     age_two_id = age_group_two.pivot_table(columns=['Product_ID'],
@@ -63,13 +63,28 @@ def product_and_age_relation(dataframe):
     age_six_max_id = age_six_id.idxmax()
     age_seven_max_id = age_seven_id.idxmax()
 
-    print("The most popular product in age group 0-17:", age_one_max_id)
-    print("The most popular product in age group 18-25:", age_two_max_id)
-    print("The most popular product in age group 26-35:", age_three_max_id)
-    print("The most popular product in age group 36-45:", age_four_max_id)
-    print("The most popular product in age group 46-50:", age_five_max_id)
-    print("The most popular product in age group 51-55:", age_six_max_id)
-    print("The most popular product in age group 55+:", age_seven_max_id)
+    age_one_max_id_category = age_group_one[age_group_one['Product_ID'] == age_one_max_id].Product_Category_1.values[0]
+    age_two_max_id_category = age_group_two[age_group_two['Product_ID'] == age_two_max_id].Product_Category_1.values[0]
+    age_three_max_id_category = age_group_three[age_group_three['Product_ID'] == age_three_max_id].Product_Category_1.values[0]
+    age_four_max_id_category = age_group_four[age_group_four['Product_ID'] == age_four_max_id].Product_Category_1.values[0]
+    age_five_max_id_category = age_group_five[age_group_five['Product_ID'] == age_five_max_id].Product_Category_1.values[0]
+    age_six_max_id_category = age_group_six[age_group_six['Product_ID'] == age_six_max_id].Product_Category_1.values[0]
+    age_seven_max_id_category = age_group_seven[age_group_seven['Product_ID'] == age_seven_max_id].Product_Category_1.values[0]
+
+    print("The most popular product in age group 0-17:", age_one_max_id,
+          "is belonged to primary category no.", age_one_max_id_category)
+    print("The most popular product in age group 18-25:", age_two_max_id,
+          "is belonged to primary category no.", age_two_max_id_category)
+    print("The most popular product in age group 26-35:", age_three_max_id,
+          "is belonged to primary category no.", age_three_max_id_category)
+    print("The most popular product in age group 36-45:", age_four_max_id,
+          "is belonged to primary category no.", age_four_max_id_category)
+    print("The most popular product in age group 46-50:", age_five_max_id,
+          "is belonged to primary category no.", age_five_max_id_category)
+    print("The most popular product in age group 51-55:", age_six_max_id,
+          "is belonged to primary category no.", age_six_max_id_category)
+    print("The most popular product in age group 55+:", age_seven_max_id,
+          "is belonged to primary category no.", age_seven_max_id_category)
 
     return age_group_and_product['Age'], age_group_and_product['product_counts']
 
