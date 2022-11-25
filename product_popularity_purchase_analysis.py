@@ -69,7 +69,7 @@ def gender_relation(data):
     plt.savefig('gender_product_popularity.svg')
 
 
-def martial_status_relation(data):
+def marital_status_relation(data):
     single = data[data['Marital_Status'] == 0]
     married = data[data['Marital_Status'] == 1]
 
@@ -116,14 +116,14 @@ def main():
 
     age_relation(data)
     gender_relation(data)
-    martial_status_relation(data)
+    marital_status_relation(data)
     # occupation_relation(data)
     city_relation(data)
 
     # ... additional analysis based on above information
 
-    # However, it already looks like P00265242 gets purchased the most overall. P00265242 also generally appears to be
-    # the most purchased product among different categories/types of customers
+    # However, it already looks like P00265242 gets purchased the most overall. P00265242 also generally appears 
+    # to be the most purchased product among different categories/types of customers
 
 
 if __name__ == '__main__':
