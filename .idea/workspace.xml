@@ -27,7 +27,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ana82-master-patch-50063" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2H9cOW1doeggH2FOwkssA8fqYWe" />
@@ -63,6 +71,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.age_and_products" />
+        <item itemvalue="Python.age_and_products" />
         <item itemvalue="Python.age_and_products" />
       </list>
     </recent_temporary>
@@ -111,7 +121,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669262931871</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added total no. of product purchased in age groups">
+      <created>1669263971874</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669263971874</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changed txt file output mode from 'a' to 'w' (writing mode">
+      <created>1669757835119</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669757835119</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,7 +155,9 @@
     <MESSAGE value="Added methods to get data from CSV file&#10;&#10;Added function to get columns of Age and Product_ID and plot to visualize the relation" />
     <MESSAGE value="Code refactoring: now group by age only and count the no. of product id.&#10;&#10;Added print statement for output" />
     <MESSAGE value="Added category that productID belonged to" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added category that productID belonged to" />
+    <MESSAGE value="Added total no. of product purchased in age groups" />
+    <MESSAGE value="Changed txt file output mode from 'a' to 'w' (writing mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed txt file output mode from 'a' to 'w' (writing mode" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1388" y="444" key="#Notifications" timestamp="1667782857093">
@@ -166,13 +192,15 @@
       <screen x="0" y="25" width="2560" height="1265" />
     </state>
     <state x="1095" y="217" width="1201" height="903" key="SettingsEditor/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1667779294585" />
-    <state x="1069" y="354" key="Vcs.Push.Dialog.v2" timestamp="1669262934218">
-      <screen x="0" y="25" width="2560" height="1265" />
+    <state x="1069" y="356" key="Vcs.Push.Dialog.v2" timestamp="1669757839419">
+      <screen x="0" y="25" width="2560" height="1274" />
     </state>
-    <state x="1069" y="354" key="Vcs.Push.Dialog.v2/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1669262934218" />
-    <state x="1519" y="557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1668390127608">
-      <screen x="0" y="25" width="2560" height="1265" />
+    <state x="1069" y="354" key="Vcs.Push.Dialog.v2/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1669263973142" />
+    <state x="1069" y="356" key="Vcs.Push.Dialog.v2/-1440.25.1440.875/0.25.2560.1274@0.25.2560.1274" timestamp="1669757839419" />
+    <state x="1519" y="559" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1669755164095">
+      <screen x="0" y="25" width="2560" height="1269" />
     </state>
     <state x="1519" y="557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1668390127608" />
+    <state x="1519" y="559" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1440.25.1440.875/0.25.2560.1269@0.25.2560.1269" timestamp="1669755164095" />
   </component>
 </project>
