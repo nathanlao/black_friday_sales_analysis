@@ -183,7 +183,7 @@ def main():
     filename = sys.argv[1]
     data = pd.read_csv(filename)
     #Reference: https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file
-    f = open("summary.txt", "a")
+    f = open("summary.txt", "w")
      
     gender_and_product_relation(data, f)
     
