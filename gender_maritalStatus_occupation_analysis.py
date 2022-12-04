@@ -2,9 +2,12 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import sys
+import seaborn as sns
+sns.set_theme()
+from scipy import stats
 
 def gender_and_product_relation(data, f):
-    print("Gender and Product Purchase Relation!", file=f)
+    print("Gender and Product Purchase Relation:", file=f)
     print("\n", file=f)
     #separate females and males data
     f_purchases = data[(data['Gender'] == 'F')]
@@ -51,11 +54,23 @@ def gender_and_product_relation(data, f):
     plt.legend()
     #plt.show()
     plt.savefig('gender_and_products.svg')
+    
+    #for chi-squared test
+    #creates a table with gender as rows and product category as cols and the number of products bought per category as the values
+    #print contingency table if confused
+    dataset = data[['Product_ID', 'Gender', 'Product_Category_1']]
+    grouped_data = dataset.groupby(['Gender', 'Product_Category_1']).count()
+    grouped_data.rename(columns = {'Product_ID': '#Products_bought'}, inplace = True)
+    grouped_data = grouped_data.reset_index()
+    contingency = grouped_data.pivot(index="Gender", columns="Product_Category_1", values="#Products_bought")
+    #print p value where is p< 0.05 then the genders affects the categories of products bought
+    chi2, p, dof, expected = stats.chi2_contingency(contingency)
+    print("Chi-Squared p-value: ", p, file=f)
     print("\n", file=f)
  
 
 def martial_and_product_relation(data, f):
-    print("Martial Status and Product Purchase Relation!", file=f)
+    print("Martial Status and Product Purchase Relation:", file=f)
     print("\n", file=f)
     #separate married/unmarried data
     married = data[(data['Marital_Status'] == 1)]
@@ -95,10 +110,22 @@ def martial_and_product_relation(data, f):
     plt.legend()
     #plt.show()
     plt.savefig('Martial_status_and_products.svg')
+    
+    #for chi-squared test
+    #creates a table with marital status as rows and product category as cols and the number of products bought per category as the values
+    #print contingency table if confused
+    dataset = data[['Product_ID', 'Marital_Status', 'Product_Category_1']]
+    grouped_data = dataset.groupby(['Marital_Status', 'Product_Category_1']).count()
+    grouped_data.rename(columns = {'Product_ID': '#Products_bought'}, inplace = True)
+    grouped_data = grouped_data.reset_index()
+    contingency = grouped_data.pivot(index="Marital_Status", columns="Product_Category_1", values="#Products_bought")
+    #print p value where is p< 0.05 then the marital status affects the categories of products bought
+    chi2, p, dof, expected = stats.chi2_contingency(contingency)
+    print("Chi-Squared p-value: ", p, file=f)
     print("\n", file=f)
  
 def occupation_and_product_relation(data, f):
-    print("Occupation and Product Purchase Relation!", file=f)
+    print("Occupation and Product Purchase Relation:", file=f)
     print("\n", file=f)
     #groupby occupation and product category 1
     dataset = data[['Product_ID', 'Occupation', 'Product_Category_1']]
@@ -106,78 +133,41 @@ def occupation_and_product_relation(data, f):
     grouped_data.rename(columns = {'Product_ID': '#Products_bought'}, inplace = True)
     grouped_data = grouped_data.reset_index()
     
-    #split into dataframes by Occupation number
-    Occ0 = grouped_data[(grouped_data['Occupation'] == 0)]
-    Occ1 = grouped_data[(grouped_data['Occupation'] == 1)].reset_index()
-    Occ2 = grouped_data[(grouped_data['Occupation'] == 2)].reset_index()
-    Occ3 = grouped_data[(grouped_data['Occupation'] == 3)].reset_index()
-    Occ4 = grouped_data[(grouped_data['Occupation'] == 4)].reset_index()
-    Occ5 = grouped_data[(grouped_data['Occupation'] == 5)].reset_index()
-    Occ6 = grouped_data[(grouped_data['Occupation'] == 6)].reset_index()
-    Occ7 = grouped_data[(grouped_data['Occupation'] == 7)].reset_index()
-    Occ8 = grouped_data[(grouped_data['Occupation'] == 8)].reset_index()#never buys from product category 14
-    Occ9 = grouped_data[(grouped_data['Occupation'] == 9)].reset_index()
-    Occ10 = grouped_data[(grouped_data['Occupation'] == 10)].reset_index()
-    Occ11 = grouped_data[(grouped_data['Occupation'] == 11)].reset_index()
-    Occ12 = grouped_data[(grouped_data['Occupation'] == 12)].reset_index()
-    Occ13 = grouped_data[(grouped_data['Occupation'] == 13)].reset_index()
-    Occ14 = grouped_data[(grouped_data['Occupation'] == 14)].reset_index()
-    Occ15 = grouped_data[(grouped_data['Occupation'] == 15)].reset_index()
-    Occ16 = grouped_data[(grouped_data['Occupation'] == 16)].reset_index()
-    Occ17 = grouped_data[(grouped_data['Occupation'] == 17)].reset_index()
-    Occ18 = grouped_data[(grouped_data['Occupation'] == 18)].reset_index()
-    Occ19 = grouped_data[(grouped_data['Occupation'] == 19)].reset_index()
-    Occ20 = grouped_data[(grouped_data['Occupation'] == 20)].reset_index()
+    purchasedata = grouped_data.pivot(index="Occupation", columns="Product_Category_1", values="#Products_bought") #get into the table format for heatmap
+    purchasedata = purchasedata.fillna(0)#incase any occupation didn't but from a category there will be NaN there so change it to zero (eg, for occ 8 and cat 14)
+    purchasedata = purchasedata.astype('int') #change data type from float to int since it's all whole numbers
+    purchasedataTransposed = purchasedata.T #in this cols are occupation and rows are product category
     
-    
-    #print max #products bought by each occupation
-    arr = [Occ0, Occ1, Occ2, Occ3, Occ4, Occ5, Occ6, Occ7, Occ8, Occ9, Occ10, Occ11, Occ12, Occ13, Occ14, Occ15, Occ16, Occ17, Occ18, Occ19, Occ20]
-    i = 0
+    occ = 0
     maxprodnum = 0
     occmax = 0
-    for o in arr:
-        maxValuesindx = o['#Products_bought'].idxmax()
-        print("Max Number of products bought by people in Occupation", i, "is", o['#Products_bought'][maxValuesindx], "which belongs to product category", o['Product_Category_1'][maxValuesindx], ".", file=f)
-        if o['#Products_bought'][maxValuesindx] > maxprodnum:
-            maxprodnum = o['#Products_bought'][maxValuesindx]
-            occmax = i
-            
-        i = i+1
+    for occ in range(len(purchasedataTransposed.columns)):
+        maxValuesindx = purchasedataTransposed[occ].idxmax()
+        print("Max Number of products bought by people in Occupation", occ, "is", purchasedataTransposed[occ][maxValuesindx], "which belongs to product category", maxValuesindx, file=f)
+        if purchasedataTransposed[occ][maxValuesindx] > maxprodnum:
+            maxprodnum = purchasedataTransposed[occ][maxValuesindx]
+            occmax = occ
      
-    print("The maximum number of products was bought by people in Occupation", occmax, ".", file=f)   
+    print("The maximum number of products was bought by people in Occupation", occmax, file=f)
     
+    #chi-squared test to determine if the occupation had any effect on the categories of products bought
+    #if p < 0.05 then it does affect it
+    chi2, p, dof, expected = stats.chi2_contingency(purchasedata)
+    print("Chi-Squared p-value: ", p, file=f)   
+    print("\n", file=f)
     
-    #plot them by occupation and product category
-    plt.figure(figsize=(30,20))
-
-    plt.xticks(range(1, 21))
-    
-    plt.scatter(Occ0['Product_Category_1'], Occ0['#Products_bought'], label = 'Occupation_0')
-    plt.scatter(Occ1['Product_Category_1'], Occ1['#Products_bought'], label = 'Occupation_1')
-    plt.scatter(Occ2['Product_Category_1'], Occ2['#Products_bought'], label = 'Occupation_2')
-    plt.scatter(Occ3['Product_Category_1'], Occ3['#Products_bought'], label = 'Occupation_3')
-    plt.scatter(Occ4['Product_Category_1'], Occ4['#Products_bought'], label = 'Occupation_4')
-    plt.scatter(Occ5['Product_Category_1'], Occ5['#Products_bought'], label = 'Occupation_5')
-    plt.scatter(Occ6['Product_Category_1'], Occ6['#Products_bought'], label = 'Occupation_6')
-    plt.scatter(Occ7['Product_Category_1'], Occ7['#Products_bought'], label = 'Occupation_7')
-    plt.scatter(Occ8['Product_Category_1'], Occ8['#Products_bought'], label = 'Occupation_8')
-    plt.scatter(Occ9['Product_Category_1'], Occ9['#Products_bought'], label = 'Occupation_9')
-    plt.scatter(Occ10['Product_Category_1'], Occ10['#Products_bought'], label = 'Occupation_10', marker="^")
-    plt.scatter(Occ11['Product_Category_1'], Occ11['#Products_bought'], label = 'Occupation_11', marker="^")
-    plt.scatter(Occ12['Product_Category_1'], Occ12['#Products_bought'], label = 'Occupation_12', marker="^")
-    plt.scatter(Occ13['Product_Category_1'], Occ13['#Products_bought'], label = 'Occupation_13', marker="^")
-    plt.scatter(Occ14['Product_Category_1'], Occ14['#Products_bought'], label = 'Occupation_14', marker="^")
-    plt.scatter(Occ15['Product_Category_1'], Occ15['#Products_bought'], label = 'Occupation_15', marker="^")
-    plt.scatter(Occ16['Product_Category_1'], Occ16['#Products_bought'], label = 'Occupation_16', marker="^")
-    plt.scatter(Occ17['Product_Category_1'], Occ17['#Products_bought'], label = 'Occupation_17', marker="^")
-    plt.scatter(Occ18['Product_Category_1'], Occ18['#Products_bought'], label = 'Occupation_18', marker="^")
-    plt.scatter(Occ19['Product_Category_1'], Occ19['#Products_bought'], label = 'Occupation_19', marker="^")
-    plt.scatter(Occ20['Product_Category_1'], Occ20['#Products_bought'], label = 'Occupation_20', marker="x")
-    plt.yscale('log')
-    #save plot
-    plt.legend()
-    plt.savefig('Occupation_and_products.svg')
-    print("\n", file=f)        
+    #plot them on a heat map by occupation and product category
+    #References: https://www.statology.org/save-seaborn-plot/
+    #https://machinelearningknowledge.ai/seaborn-heatmap-using-sns-heatmap-with-examples-for-beginners/
+    #https://stackoverflow.com/questions/33104322/auto-adjust-font-size-in-seaborn-heatmap
+    #https://seaborn.pydata.org/examples/spreadsheet_heatmap.html
+    f, ax = plt.subplots(figsize=(25,25))
+    heatmap = sns.heatmap(purchasedata, annot=True, linewidths = 1, ax=ax, cmap="OrRd")
+    plt.title('Products bought in each Category per Occupation', fontsize = 20) # title with fontsize 20
+    plt.xlabel('Product_Category', fontsize = 15) # x-axis label with fontsize 15
+    plt.ylabel('Occupation', fontsize = 15) # y-axis label with fontsize 15
+    fig = heatmap.get_figure()
+    fig.savefig('OccupationPurchasesHeatmap.svg')        
     
 def main():
     filename = sys.argv[1]
