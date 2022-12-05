@@ -1,0 +1,189 @@
+Refer to the popularity graphs to see exactly which products are the most popular in a *specific* category. The summaries below combine the information from the graphs to help determine the most popular products in a more *generalized* fashion.
+Example: Relation R contains 5 different categories/graphs. If all 5 categories/graphs were combined into one, there would be a certain number of *unique* products displayed. A summary does this combination and calculates a few statistics for *each* unique product (specifically among the 5 categories).
+
+Since we only consider the top 5 products for a category, the average ranking is calculated out of 5 with a lower number representing a more popular product.
+Example: Product P ranks 1st in Category A and 3rd in Category B for a particular relation. Average ranking of P = (1 + 3) / 2
+
+
+
+PART 1
+
+Considering age relation only (7 total categories, refer to 'only_age_popularity.svg'):
+P00265242  was bought  1839  times among all categories, appears in  6  different categories, and ranks  1.17  on average in a category.
+P00110742  was bought  1401  times among all categories, appears in  4  different categories, and ranks  2.75  on average in a category.
+P00112142  was bought  1303  times among all categories, appears in  4  different categories, and ranks  3.25  on average in a category.
+P00025442  was bought  1277  times among all categories, appears in  5  different categories, and ranks  2.60  on average in a category.
+P00057642  was bought  895  times among all categories, appears in  2  different categories, and ranks  5.00  on average in a category.
+P00046742  was bought  425  times among all categories, appears in  2  different categories, and ranks  3.50  on average in a category.
+P00237542  was bought  298  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+P00051442  was bought  201  times among all categories, appears in  2  different categories, and ranks  3.50  on average in a category.
+P00184942  was bought  191  times among all categories, appears in  2  different categories, and ranks  5.00  on average in a category.
+P00059442  was bought  115  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+P00010742  was bought  110  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+P00080342  was bought  80  times among all categories, appears in  1  different categories, and ranks  2.00  on average in a category.
+P00255842  was bought  65  times among all categories, appears in  1  different categories, and ranks  1.00  on average in a category.
+P00145042  was bought  64  times among all categories, appears in  1  different categories, and ranks  2.00  on average in a category.
+P00242742  was bought  56  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+P00034742  was bought  56  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+
+Considering gender relation only (2 total categories, refer to 'only_gender_popularity.svg'):
+P00265242  was bought  1880  times among all categories, appears in  2  different categories, and ranks  1.00  on average in a category.
+P00110742  was bought  1612  times among all categories, appears in  2  different categories, and ranks  4.00  on average in a category.
+P00025442  was bought  1267  times among all categories, appears in  1  different categories, and ranks  2.00  on average in a category.
+P00112142  was bought  1223  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+P00057642  was bought  1212  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+P00220442  was bought  440  times among all categories, appears in  1  different categories, and ranks  2.00  on average in a category.
+P00058042  was bought  387  times among all categories, appears in  1  different categories, and ranks  3.00  on average in a category.
+P00255842  was bought  375  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+
+Considering marital status relation only (2 total categories, refer to 'only_marital_status_popularity.svg'):
+P00265242  was bought  1880  times among all categories, appears in  2  different categories, and ranks  1.00  on average in a category.
+P00025442  was bought  1615  times among all categories, appears in  2  different categories, and ranks  2.50  on average in a category.
+P00110742  was bought  1612  times among all categories, appears in  2  different categories, and ranks  2.50  on average in a category.
+P00112142  was bought  1562  times among all categories, appears in  2  different categories, and ranks  4.00  on average in a category.
+P00057642  was bought  880  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+P00184942  was bought  597  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+
+Considering occupation relation only (21 total categories, refer to 'only_occupation_popularity.svg'):
+P00265242  was bought  1709  times among all categories, appears in  18  different categories, and ranks  1.33  on average in a category.
+P00110742  was bought  1296  times among all categories, appears in  12  different categories, and ranks  3.42  on average in a category.
+P00025442  was bought  1273  times among all categories, appears in  12  different categories, and ranks  3.08  on average in a category.
+P00112142  was bought  989  times among all categories, appears in  9  different categories, and ranks  3.44  on average in a category.
+P00237542  was bought  576  times among all categories, appears in  5  different categories, and ranks  4.20  on average in a category.
+P00057642  was bought  472  times among all categories, appears in  4  different categories, and ranks  2.75  on average in a category.
+P00059442  was bought  239  times among all categories, appears in  4  different categories, and ranks  3.75  on average in a category.
+P00220442  was bought  226  times among all categories, appears in  2  different categories, and ranks  2.50  on average in a category.
+P00110942  was bought  211  times among all categories, appears in  2  different categories, and ranks  5.00  on average in a category.
+P00046742  was bought  190  times among all categories, appears in  2  different categories, and ranks  3.50  on average in a category.
+P00058042  was bought  184  times among all categories, appears in  4  different categories, and ranks  2.50  on average in a category.
+P00031042  was bought  184  times among all categories, appears in  2  different categories, and ranks  4.00  on average in a category.
+P00255842  was bought  174  times among all categories, appears in  3  different categories, and ranks  4.33  on average in a category.
+P00110842  was bought  115  times among all categories, appears in  2  different categories, and ranks  4.00  on average in a category.
+P00117942  was bought  92  times among all categories, appears in  3  different categories, and ranks  3.00  on average in a category.
+P00184942  was bought  90  times among all categories, appears in  1  different categories, and ranks  2.00  on average in a category.
+P00145042  was bought  88  times among all categories, appears in  2  different categories, and ranks  2.50  on average in a category.
+P00034742  was bought  86  times among all categories, appears in  2  different categories, and ranks  3.00  on average in a category.
+P00242742  was bought  63  times among all categories, appears in  2  different categories, and ranks  2.00  on average in a category.
+P00010742  was bought  54  times among all categories, appears in  2  different categories, and ranks  2.00  on average in a category.
+P00080342  was bought  50  times among all categories, appears in  2  different categories, and ranks  4.00  on average in a category.
+P00114942  was bought  42  times among all categories, appears in  2  different categories, and ranks  3.50  on average in a category.
+P00251242  was bought  34  times among all categories, appears in  1  different categories, and ranks  3.00  on average in a category.
+P00112542  was bought  33  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+P00317842  was bought  29  times among all categories, appears in  1  different categories, and ranks  3.00  on average in a category.
+P00085242  was bought  27  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+P00117442  was bought  24  times among all categories, appears in  1  different categories, and ranks  2.00  on average in a category.
+P00000142  was bought  22  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+P00102642  was bought  21  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+P00052842  was bought  6  times among all categories, appears in  1  different categories, and ranks  3.00  on average in a category.
+
+Considering city relation only (3 total categories, refer to 'only_city_popularity.svg'):
+P00265242  was bought  1880  times among all categories, appears in  3  different categories, and ranks  1.00  on average in a category.
+P00025442  was bought  1615  times among all categories, appears in  3  different categories, and ranks  2.67  on average in a category.
+P00110742  was bought  1612  times among all categories, appears in  3  different categories, and ranks  2.67  on average in a category.
+P00112142  was bought  1255  times among all categories, appears in  2  different categories, and ranks  3.50  on average in a category.
+P00184942  was bought  648  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+P00046742  was bought  538  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+P00278642  was bought  316  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+P00057642  was bought  313  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+
+
+
+PART 2
+The summary below combines the information from PART 1 to help determine the most popular products generally overall.
+
+The number of times a product is bought in PART 2 is calculated by adding together *each* occurence of the number of times that product is bought in PART 1, so the purchase amounts are not reflective of the products' overall amount purchased in the data set.
+Example: Product P was purchased a total of 5 times when considering age and was purchased a total of 10 times when considering gender. Amount of times bought for P = 5 + 10
+
+P00265242  was bought  9188  times among all categories, appears in  31  different categories, and ranks  1.23  on average in a category.
+P00110742  was bought  7533  times among all categories, appears in  23  different categories, and ranks  3.17  on average in a category.
+P00025442  was bought  7047  times among all categories, appears in  23  different categories, and ranks  2.83  on average in a category.
+P00112142  was bought  6332  times among all categories, appears in  18  different categories, and ranks  3.50  on average in a category.
+P00057642  was bought  3772  times among all categories, appears in  9  different categories, and ranks  4.00  on average in a category.
+P00184942  was bought  1526  times among all categories, appears in  5  different categories, and ranks  4.40  on average in a category.
+P00046742  was bought  1153  times among all categories, appears in  5  different categories, and ranks  3.80  on average in a category.
+P00237542  was bought  874  times among all categories, appears in  6  different categories, and ranks  4.17  on average in a category.
+P00220442  was bought  666  times among all categories, appears in  3  different categories, and ranks  2.33  on average in a category.
+P00255842  was bought  614  times among all categories, appears in  5  different categories, and ranks  3.60  on average in a category.
+P00058042  was bought  571  times among all categories, appears in  5  different categories, and ranks  2.60  on average in a category.
+P00059442  was bought  354  times among all categories, appears in  5  different categories, and ranks  3.80  on average in a category.
+P00278642  was bought  316  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+P00110942  was bought  211  times among all categories, appears in  2  different categories, and ranks  5.00  on average in a category.
+P00051442  was bought  201  times among all categories, appears in  2  different categories, and ranks  3.50  on average in a category.
+P00031042  was bought  184  times among all categories, appears in  2  different categories, and ranks  4.00  on average in a category.
+P00010742  was bought  164  times among all categories, appears in  3  different categories, and ranks  3.00  on average in a category.
+P00145042  was bought  152  times among all categories, appears in  3  different categories, and ranks  2.33  on average in a category.
+P00034742  was bought  142  times among all categories, appears in  3  different categories, and ranks  3.67  on average in a category.
+P00080342  was bought  130  times among all categories, appears in  3  different categories, and ranks  3.33  on average in a category.
+P00242742  was bought  119  times among all categories, appears in  3  different categories, and ranks  2.67  on average in a category.
+P00110842  was bought  115  times among all categories, appears in  2  different categories, and ranks  4.00  on average in a category.
+P00117942  was bought  92  times among all categories, appears in  3  different categories, and ranks  3.00  on average in a category.
+P00114942  was bought  42  times among all categories, appears in  2  different categories, and ranks  3.50  on average in a category.
+P00251242  was bought  34  times among all categories, appears in  1  different categories, and ranks  3.00  on average in a category.
+P00112542  was bought  33  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+P00317842  was bought  29  times among all categories, appears in  1  different categories, and ranks  3.00  on average in a category.
+P00085242  was bought  27  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+P00117442  was bought  24  times among all categories, appears in  1  different categories, and ranks  2.00  on average in a category.
+P00000142  was bought  22  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+P00102642  was bought  21  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+P00052842  was bought  6  times among all categories, appears in  1  different categories, and ranks  3.00  on average in a category.
+
+
+
+PART 3
+The summaries below are the results of combining *multiple* relations.
+
+Considering males and their age (7 total categories, refer to 'combined_male_age_popularity.svg'):
+P00265242  was bought  1342  times among all categories, appears in  6  different categories, and ranks  1.67  on average in a category.
+P00112142  was bought  1104  times among all categories, appears in  5  different categories, and ranks  3.80  on average in a category.
+P00110742  was bought  1087  times among all categories, appears in  4  different categories, and ranks  2.25  on average in a category.
+P00057642  was bought  1063  times among all categories, appears in  4  different categories, and ranks  3.75  on average in a category.
+P00025442  was bought  1041  times among all categories, appears in  6  different categories, and ranks  3.50  on average in a category.
+P00237542  was bought  280  times among all categories, appears in  2  different categories, and ranks  3.00  on average in a category.
+P00046742  was bought  95  times among all categories, appears in  1  different categories, and ranks  1.00  on average in a category.
+P00117942  was bought  89  times among all categories, appears in  1  different categories, and ranks  3.00  on average in a category.
+P00010742  was bought  87  times among all categories, appears in  1  different categories, and ranks  3.00  on average in a category.
+P00080342  was bought  61  times among all categories, appears in  1  different categories, and ranks  2.00  on average in a category.
+P00051442  was bought  56  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+P00184942  was bought  54  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+P00255842  was bought  45  times among all categories, appears in  1  different categories, and ranks  3.00  on average in a category.
+P00145042  was bought  43  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+
+Considering females and their age (7 total categories, refer to 'combined_female_age_popularity.svg'):
+P00265242  was bought  497  times among all categories, appears in  6  different categories, and ranks  1.33  on average in a category.
+P00220442  was bought  367  times among all categories, appears in  4  different categories, and ranks  2.25  on average in a category.
+P00058042  was bought  240  times among all categories, appears in  2  different categories, and ranks  2.50  on average in a category.
+P00110842  was bought  220  times among all categories, appears in  2  different categories, and ranks  3.50  on average in a category.
+P00110742  was bought  141  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+P00255842  was bought  99  times among all categories, appears in  2  different categories, and ranks  5.00  on average in a category.
+P00000142  was bought  97  times among all categories, appears in  2  different categories, and ranks  4.00  on average in a category.
+P00112142  was bought  83  times among all categories, appears in  1  different categories, and ranks  3.00  on average in a category.
+P00034742  was bought  77  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+P00051442  was bought  62  times among all categories, appears in  2  different categories, and ranks  3.00  on average in a category.
+P00080342  was bought  49  times among all categories, appears in  2  different categories, and ranks  4.50  on average in a category.
+P00102642  was bought  42  times among all categories, appears in  1  different categories, and ranks  2.00  on average in a category.
+P00031042  was bought  39  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+P00059442  was bought  38  times among all categories, appears in  1  different categories, and ranks  2.00  on average in a category.
+P00251242  was bought  38  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+P00025442  was bought  31  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+P00003442  was bought  25  times among all categories, appears in  1  different categories, and ranks  1.00  on average in a category.
+P00086042  was bought  24  times among all categories, appears in  1  different categories, and ranks  2.00  on average in a category.
+P00145042  was bought  21  times among all categories, appears in  1  different categories, and ranks  2.00  on average in a category.
+P00085942  was bought  21  times among all categories, appears in  1  different categories, and ranks  3.00  on average in a category.
+P00184942  was bought  18  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+
+Considering males and their marital status (2 total categories, refer to 'combined_male_marital_status_popularity.svg'):
+P00265242  was bought  1372  times among all categories, appears in  2  different categories, and ranks  1.00  on average in a category.
+P00025442  was bought  1267  times among all categories, appears in  2  different categories, and ranks  2.00  on average in a category.
+P00110742  was bought  1247  times among all categories, appears in  2  different categories, and ranks  3.00  on average in a category.
+P00112142  was bought  1223  times among all categories, appears in  2  different categories, and ranks  4.00  on average in a category.
+P00057642  was bought  1212  times among all categories, appears in  2  different categories, and ranks  5.00  on average in a category.
+
+Considering females and their marital status (2 total categories, refer to 'combined_female_marital_status_popularity.svg'):
+P00265242  was bought  508  times among all categories, appears in  2  different categories, and ranks  1.00  on average in a category.
+P00220442  was bought  440  times among all categories, appears in  2  different categories, and ranks  2.00  on average in a category.
+P00058042  was bought  387  times among all categories, appears in  2  different categories, and ranks  3.50  on average in a category.
+P00117442  was bought  233  times among all categories, appears in  1  different categories, and ranks  3.00  on average in a category.
+P00034742  was bought  229  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+P00255842  was bought  154  times among all categories, appears in  1  different categories, and ranks  4.00  on average in a category.
+P00025442  was bought  150  times among all categories, appears in  1  different categories, and ranks  5.00  on average in a category.
+
