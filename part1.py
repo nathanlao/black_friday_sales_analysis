@@ -133,7 +133,7 @@ def age_and_product_relation(data, f):
     width = 0.1
     plt.figure(figsize=(15, 5))
     plt.title("Age groups product purchases per category")
-    plt.xlabel("Ages")
+    plt.xlabel("Product Category #")
     plt.xticks(range(1, 21))
     plt.ylabel("# of products purchased in each age")
     plt.yscale('log')
