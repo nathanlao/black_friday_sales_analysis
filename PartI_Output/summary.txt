@@ -1,0 +1,78 @@
+Age and Product Purchase Relation!
+
+
+There are 7 groups of age in dataset
+Age 0-17 bought 15102 products
+Age 18-25 bought 99660 products
+Age 26-35 bought 219587 products
+Age 36-45 bought 110013 products
+Age 46-50 bought 45701 products
+Age 51-55 bought 38501 products
+Age 55+ bought 21504 products
+
+
+The most popular product in age group 0-17: P00255842 and belonged to primary category 16 . Total no. of purchases:  65
+The most popular product in age group 18-25: P00265242 and belonged to primary category 5 . Total no. of purchases:  389
+The most popular product in age group 26-35: P00265242 and belonged to primary category 5 . Total no. of purchases:  746
+The most popular product in age group 36-45: P00025442 and belonged to primary category 1 . Total no. of purchases:  356
+The most popular product in age group 46-50: P00265242 and belonged to primary category 5 . Total no. of purchases:  138
+The most popular product in age group 51-55: P00265242 and belonged to primary category 5 . Total no. of purchases:  140
+The most popular product in age group 55+: P00265242 and belonged to primary category 5 . Total no. of purchases:  104
+
+
+Gender and Product Purchase Relation:
+
+
+From our dataset we can see Females bought  135809 and Males bought  414259 products.
+The most popular product for females had Product_ID:  P00265242 and belonged to primary category 5 . 508 purchases of this product was made by females.
+The most popular product for males had Product_ID:  P00265242 and belonged to primary category 5 . 1372 purchases of this product was made by males.
+Chi-Squared p-value:  0.0
+
+
+Marital Status and Product Purchase Relation:
+
+
+From our dataset we can see married people bought  225337 and unmarried people bought  324731 products.
+The most popular product for married people had Product_ID:  P00265242 and belonged to primary category 5 . 793 purchases of this product was made by married people.
+The most popular product for unmarried people had Product_ID:  P00265242 and belonged to primary category 5 . 1087 purchases of this product was made by unmarried people.
+Chi-Squared p-value:  2.8475938150382975e-102
+
+
+Occupation and Product Purchase Relation:
+
+
+Max Number of products bought by people in Occupation 0 is 18985 which belongs to product category 5
+Max Number of products bought by people in Occupation 1 is 13169 which belongs to product category 5
+Max Number of products bought by people in Occupation 2 is 7613 which belongs to product category 5
+Max Number of products bought by people in Occupation 3 is 5286 which belongs to product category 5
+Max Number of products bought by people in Occupation 4 is 20459 which belongs to product category 5
+Max Number of products bought by people in Occupation 5 is 3646 which belongs to product category 1
+Max Number of products bought by people in Occupation 6 is 5691 which belongs to product category 5
+Max Number of products bought by people in Occupation 7 is 16037 which belongs to product category 1
+Max Number of products bought by people in Occupation 8 is 512 which belongs to product category 1
+Max Number of products bought by people in Occupation 9 is 2154 which belongs to product category 5
+Max Number of products bought by people in Occupation 10 is 3628 which belongs to product category 5
+Max Number of products bought by people in Occupation 11 is 3391 which belongs to product category 5
+Max Number of products bought by people in Occupation 12 is 9257 which belongs to product category 1
+Max Number of products bought by people in Occupation 13 is 2229 which belongs to product category 8
+Max Number of products bought by people in Occupation 14 is 7636 which belongs to product category 5
+Max Number of products bought by people in Occupation 15 is 3376 which belongs to product category 1
+Max Number of products bought by people in Occupation 16 is 6795 which belongs to product category 5
+Max Number of products bought by people in Occupation 17 is 12767 which belongs to product category 1
+Max Number of products bought by people in Occupation 18 is 1753 which belongs to product category 1
+Max Number of products bought by people in Occupation 19 is 2370 which belongs to product category 5
+Max Number of products bought by people in Occupation 20 is 9819 which belongs to product category 5
+The maximum number of products was bought by people in Occupation 4
+Chi-Squared p-value:  0.0
+
+
+City and Product Purchase Relation:
+
+
+From our dataset we can see City A people bought  147720 and city B people bought  231173 and city C people bought  171175 products.
+most popular product category for city A is 5 with 42211 product purchases.
+most popular product category for city B is 5 with 64138 product purchases.
+most popular product category for city C is 1 with 47044 product purchases.
+Chi-Squared p-value:  0.0
+
+

@@ -2,7 +2,7 @@ import sys
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-
+from scipy import stats
 
 def getData():
     filename = sys.argv[1]
@@ -10,7 +10,7 @@ def getData():
     return data
 
 
-def product_and_age_relation(dataframe, f):
+def age_and_product_relation(dataframe, f):
     # Drop rows if 'Age'/ 'Product_ID' contains NaN values
     dataframe['Age'].dropna(axis=0)
     dataframe['Product_ID'].dropna(axis=0)
@@ -118,11 +118,8 @@ def main():
 
     black_friday_sales_data = getData()
 
-    # Create a dataFrame for data
-    dataFrame = pd.DataFrame(black_friday_sales_data)
-
     # Retrieve age groups and its associated number of products being purchased
-    age, number_of_products = product_and_age_relation(dataFrame, f)
+    age, number_of_products = age_and_product_relation(black_friday_sales_data, f)
 
     # graph plot showing relationship between age and products
     plotAgeAndProducts(age, number_of_products)

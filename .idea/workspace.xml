@@ -14,6 +14,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/age_and_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/age_and_products.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/age_and_products.svg" beforeDir="false" afterPath="$PROJECT_DIR$/age_and_products.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669757835119</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Now output the print statement to txt file">
+      <created>1669758344493</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669758344493</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,7 +165,8 @@
     <MESSAGE value="Added category that productID belonged to" />
     <MESSAGE value="Added total no. of product purchased in age groups" />
     <MESSAGE value="Changed txt file output mode from 'a' to 'w' (writing mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed txt file output mode from 'a' to 'w' (writing mode" />
+    <MESSAGE value="Now output the print statement to txt file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now output the print statement to txt file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1388" y="444" key="#Notifications" timestamp="1667782857093">
@@ -192,11 +201,11 @@
       <screen x="0" y="25" width="2560" height="1265" />
     </state>
     <state x="1095" y="217" width="1201" height="903" key="SettingsEditor/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1667779294585" />
-    <state x="1069" y="356" key="Vcs.Push.Dialog.v2" timestamp="1669757839419">
+    <state x="1069" y="356" key="Vcs.Push.Dialog.v2" timestamp="1669758351029">
       <screen x="0" y="25" width="2560" height="1274" />
     </state>
     <state x="1069" y="354" key="Vcs.Push.Dialog.v2/-1440.25.1440.875/0.25.2560.1265@0.25.2560.1265" timestamp="1669263973142" />
-    <state x="1069" y="356" key="Vcs.Push.Dialog.v2/-1440.25.1440.875/0.25.2560.1274@0.25.2560.1274" timestamp="1669757839419" />
+    <state x="1069" y="356" key="Vcs.Push.Dialog.v2/-1440.25.1440.875/0.25.2560.1274@0.25.2560.1274" timestamp="1669758351029" />
     <state x="1519" y="559" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1669755164095">
       <screen x="0" y="25" width="2560" height="1269" />
     </state>
