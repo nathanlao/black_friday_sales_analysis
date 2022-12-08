@@ -1,0 +1,25 @@
+GaussianNB train score:  0.388480454537742
+GaussianNB valid Score:  0.38953002174276635
+Prediction of GaussianNB model: products most likely to be purchased from highest occurrence product category#: 1
+
+
+RandomForestClassifier train score:  0.7421821786882107
+RandomForestClassifier valid score:  0.7424318447900987
+Prediction of RandomForestClassifier model: products most likely to be purchased from highest occurrence product category#: 5
+
+
+knn_model train score:  0.9376368012682068
+knn_model valid score:  0.9095239134070696
+Prediction of knn_model model: products most likely to be purchased from highest occurrence product category#: 5
+
+
+decision_tree_model training score:  0.7762070628843464
+decision_tree_model valid score:  0.776689427488965
+Prediction of DecisionTreeClassifier model: products most likely to be purchased from highest occurrence product category#: 5
+
+
+voting_model training score:  0.8785677407156933
+voting_model valid score:  0.8657547794090913
+Prediction of VotingClassifier model: products most likely to be purchased from highest occurrence product category#: 1
+
+
