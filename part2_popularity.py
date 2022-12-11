@@ -101,7 +101,7 @@ def age_relation(data, f):
     plt.subplot(2, 4, 7)
     category_plotter(fifty_five_plus, 'Most popular products among ages 55+')
     plt.tight_layout()  # adapted from https://stackoverflow.com/a/45239920
-    plt.savefig('part2_popularity_output/only_age_popularity.svg')
+    plt.savefig('Part2_Output/only_age_popularity.svg')
 
     # use 'product_statistics' function to get additional information about age relation
     age_categories = [zero_to_seventeen, eighteen_to_twenty_five, twenty_six_to_thirty_five, thirty_six_to_forty_five, forty_six_to_fifty, fifty_one_to_fifty_five, fifty_five_plus]
@@ -124,7 +124,7 @@ def gender_relation(data, f):
     plt.subplot(1, 2, 2)
     category_plotter(female, 'Most popular products among females')
     plt.tight_layout()
-    plt.savefig('part2_popularity_output/only_gender_popularity.svg')
+    plt.savefig('Part2_Output/only_gender_popularity.svg')
 
     gender_categories = [male, female]
     print('Considering gender relation only (2 total categories, refer to \'only_gender_popularity.svg\'):', file=f)
@@ -145,7 +145,7 @@ def marital_status_relation(data, f):
     plt.subplot(1, 2, 2)
     category_plotter(married, 'Most popular products among married individuals')
     plt.tight_layout()
-    plt.savefig('part2_popularity_output/only_marital_status_popularity.svg')
+    plt.savefig('Part2_Output/only_marital_status_popularity.svg')
 
     marital_status_categories = [unmarried, married]
     print('Considering marital status relation only (2 total categories, refer to \'only_marital_status_popularity.svg\'):', file=f)
@@ -223,7 +223,7 @@ def occupation_relation(data, f):
     plt.subplot(5, 5, 21)
     category_plotter(twenty, 'Most popular products among occupation 20')
     plt.tight_layout()
-    plt.savefig('part2_popularity_output/only_occupation_popularity.svg', bbox_inches='tight')
+    plt.savefig('Part2_Output/only_occupation_popularity.svg', bbox_inches='tight')
 
     occupation_categories = [zero, one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty]
     print('Considering occupation relation only (21 total categories, refer to \'only_occupation_popularity.svg\'):', file=f)
@@ -247,7 +247,7 @@ def city_relation(data, f):
     plt.subplot(1, 3, 3)
     category_plotter(c, 'Most popular products among city C')
     plt.tight_layout()
-    plt.savefig('part2_popularity_output/only_city_popularity.svg')
+    plt.savefig('Part2_Output/only_city_popularity.svg')
 
     city_categories = [a, b, c]
     print('Considering city relation only (3 total categories, refer to \'only_city_popularity.svg\'):', file=f)
@@ -286,7 +286,7 @@ def gender_age_relation(data, f):
     plt.subplot(2, 4, 7)
     category_plotter(male_fifty_five_plus, 'Most popular products among males aged 55+')
     plt.tight_layout()
-    plt.savefig('part2_popularity_output/combined_male_age_popularity.svg')
+    plt.savefig('Part2_Output/combined_male_age_popularity.svg')
 
     male_age_categories = [male_zero_to_seventeen, male_eighteen_to_twenty_five, male_twenty_six_to_thirty_five, male_thirty_six_to_forty_five, male_forty_six_to_fifty, male_fifty_one_to_fifty_five, male_fifty_five_plus]
     print('Considering males and their age (7 total categories, refer to \'combined_male_age_popularity.svg\'):', file=f)
@@ -316,7 +316,7 @@ def gender_age_relation(data, f):
     plt.subplot(2, 4, 7)
     category_plotter(female_fifty_five_plus, 'Most popular products among females aged 55+')
     plt.tight_layout()
-    plt.savefig('part2_popularity_output/combined_female_age_popularity.svg')
+    plt.savefig('Part2_Output/combined_female_age_popularity.svg')
 
     female_age_categories = [female_zero_to_seventeen, female_eighteen_to_twenty_five, female_twenty_six_to_thirty_five, female_thirty_six_to_forty_five, female_forty_six_to_fifty, female_fifty_one_to_fifty_five, female_fifty_five_plus]
     print('Considering females and their age (7 total categories, refer to \'combined_female_age_popularity.svg\'):', file=f)
@@ -337,7 +337,7 @@ def gender_marital_status_relation(data, f):
     plt.subplot(1, 2, 2)
     category_plotter(male_married, 'Most popular products among married males')
     plt.tight_layout()
-    plt.savefig('part2_popularity_output/combined_male_marital_status_popularity.svg')
+    plt.savefig('Part2_Output/combined_male_marital_status_popularity.svg')
 
     male_marital_status_categories = [male_unmarried, male_married]
     print('Considering males and their marital status (2 total categories, refer to \'combined_male_marital_status_popularity.svg\'):', file=f)
@@ -352,7 +352,7 @@ def gender_marital_status_relation(data, f):
     plt.subplot(1, 2, 2)
     category_plotter(female_married, 'Most popular products among married females')
     plt.tight_layout()
-    plt.savefig('part2_popularity_output/combined_female_marital_status_popularity.svg')
+    plt.savefig('Part2_Output/combined_female_marital_status_popularity.svg')
 
     female_marital_status_categories = [female_unmarried, female_married]
     print('Considering females and their marital status (2 total categories, refer to \'combined_female_marital_status_popularity.svg\'):', file=f)
@@ -367,7 +367,7 @@ def main():
     global all_categories
     all_categories = []
 
-    f = open('part2_popularity_output/popularity_summaries.txt', 'w')
+    f = open('Part2_Output/popularity_summaries.txt', 'w')
 
     print('Refer to the popularity graphs to see exactly which products are the most popular in a *specific* category. The summaries below combine the information from the graphs to help determine the most popular products in a more *generalized* fashion.', file=f)
     print('Example: Relation R contains 5 different categories/graphs. If all 5 categories/graphs were combined into one, there would be a certain number of *unique* products displayed. A summary does this combination and calculates a few statistics for *each* unique product (specifically among the 5 categories).', file=f)
@@ -382,7 +382,7 @@ def main():
     city_relation(data, f)
 
     print('\n\nPART 2\nThe summary below combines the information from PART 1 to help determine the most popular products generally overall.', file=f)
-    print('\nThe number of times a product is bought in PART 2 is calculated by adding together *each* occurence of the number of times that product is bought in PART 1, so the purchase amounts are not reflective of the products\' overall amount purchased in the data set.', file=f)
+    print('\nThe number of times a product is bought in PART 2 is calculated by adding together *each* occurence of the number of times that product is bought in PART 1. Therefore, the \'times bought\' statistic is not reflective of a product\'s overall occurence in the data set.', file=f)
     print('Example: Product P was purchased a total of 5 times when considering age and was purchased a total of 10 times when considering gender. Amount of times bought for P = 5 + 10\n', file=f)
     product_statistics(all_categories, f)
 
@@ -396,9 +396,9 @@ def main():
 if __name__ == '__main__':
     sns.set_theme(style='ticks', palette='blend:#6C2B6D,#E98D6B')
 
-    # all files created by this program will be outputted to 'part2_popularity_output' folder
+    # all files created by this program will be outputted to 'Part2_Output' folder
     current_directory = os.getcwd()  # adapted from https://stackoverflow.com/a/14125914
-    final_directory = os.path.join(current_directory, r'part2_popularity_output')
+    final_directory = os.path.join(current_directory, r'Part2_Output')
     if not os.path.exists(final_directory):
         os.makedirs(final_directory)
 
